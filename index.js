@@ -18,7 +18,7 @@ let History = db.collection("History")
 
 app.use(express.json())
 app.use(cors({
-    origin:"https://weather-forecastss.netlify.app/",
+    origin:"https://weather-forecastss.netlify.app",
     credentials: true
 }))
 
