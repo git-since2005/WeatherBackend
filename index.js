@@ -56,7 +56,7 @@ route.post("/getWeather", async(req, res)=>{
             let json = await e.json()
             return res.json(json)
         }).catch(async(e)=>{
-            return res.json(e)
+            return res.json({"status":"error"})
         })
     }
 })
